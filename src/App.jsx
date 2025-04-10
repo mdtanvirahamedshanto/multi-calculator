@@ -117,7 +117,7 @@ const App = () => {
                   className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-gray-100 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-400"
                 >
                   <span className="sr-only">Open main menu</span>
-                  {isMenuOpen ? '✕' : '☰'}
+                  {isMenuOpen ? 'X' : '☰'}
                 </button>
               </div>
 
