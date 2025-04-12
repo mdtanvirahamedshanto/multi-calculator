@@ -9,11 +9,8 @@ import ScientificCalculator from './components/basic/ScientificCalculator'
 import GraphingCalculator from './components/basic/GraphingCalculator'
 import ProgrammerCalculator from './components/basic/ProgrammerCalculator'
 
-// Legacy imports (will be moved to new structure)
-import BMICalculator from './components/BMICalculator'
-import MortgageCalculator from './components/MortgageCalculator'
-import CurrencyConverter from './components/CurrencyConverter'
-import MathTools from './components/MathTools'
+// financial calculators
+import LoanCalculator from './components/financial/LoanCalculator'
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -190,10 +187,18 @@ const App = () => {
               <Route path="/basic/programmer" element={<ProgrammerCalculator />} />
               
               {/* Legacy routes - will be updated to new paths */}
-              <Route path="/bmi" element={<BMICalculator />} />
+              {/* <Route path="/bmi" element={<BMICalculator />} />
               <Route path="/mortgage" element={<MortgageCalculator />} />
               <Route path="/currency" element={<CurrencyConverter />} />
-              <Route path="/math" element={<MathTools />} />
+              <Route path="/math" element={<MathTools />} /> */}
+
+              {/* Financial Calculator Routes */}
+              <Route path="/financial/loan" element={<LoanCalculator />} />
+              {/* <Route path="/financial/credit" element={<CreditCalculator />} />
+              <Route path="/financial/investment" element={<InvestmentCalculator />} />
+              <Route path="/financial/retirement" element={<RetirementCalculator />} />
+              <Route path="/financial/income" element={<IncomeCalculator />} />
+              <Route path="/financial/expense" element={<ExpenseCalculator />} /> */}
               
               {/* Placeholder routes for other calculators */}
               <Route path="*" element={<div className="text-center p-8"><h2 className="text-2xl font-bold text-gray-800">Coming Soon!</h2><p className="text-gray-600 mt-2">This calculator is under development.</p></div>} />
